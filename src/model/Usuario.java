@@ -4,10 +4,20 @@ import enumerator.TiposUsuariosEnum;
 
 public class Usuario {
 
+	private Integer idUsuario;
 	private String login;
 	private String senha;
 	private TiposUsuariosEnum tipoUsuario;
 	
+		
+	public Integer getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(Integer idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+
 	public String getLogin() {
 		return login;
 	}

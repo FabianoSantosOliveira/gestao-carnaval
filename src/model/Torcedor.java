@@ -3,6 +3,7 @@ package model;
 public class Torcedor extends Usuario {
 
 	private String nome;
+	private String sobrenome;
 	private String email;
 	private String sexo;
 	private EscolaSamba escolaPreferida;
@@ -13,6 +14,16 @@ public class Torcedor extends Usuario {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	
+	
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
 	}
 
 	public String getEmail() {
