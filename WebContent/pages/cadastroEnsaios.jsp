@@ -8,9 +8,20 @@
 </head>
 <body>
 
-<form>
+<form action="<%=request.getContextPath()%>/EnsaioServlet" method="post">
 
+<h2>Cadastro de Ensaios</h2>
 
+Endereço:<input type="text" name="endereco"><br/>
+Data : <input type="text" name="data"><br/>
+Horário : <input type="text" name="horario"><br/>
+
+${mensagem}
+
+<br/><br/>
+
+<input type="submit" value="Cadastrar">
+<input type="submit" value="voltar" name="btnVoltar">
 
 </form>
 

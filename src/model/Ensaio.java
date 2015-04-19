@@ -1,11 +1,13 @@
 package model;
 
-import java.sql.Date;
+import java.util.Date;
+
+
 
 public class Ensaio {
 
 	private Date data;
-	private Date horario;
+	private String horario;
 	private EscolaSamba escola;
 	private String endereco;
 
@@ -17,11 +19,11 @@ public class Ensaio {
 		this.data = data;
 	}
 
-	public Date getHorario() {
+	public String getHorario() {
 		return horario;
 	}
 
-	public void setHorario(Date horario) {
+	public void setHorario(String horario) {
 		this.horario = horario;
 	}
 

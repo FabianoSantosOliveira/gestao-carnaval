@@ -57,6 +57,7 @@ public class UsuarioServlet extends HttpServlet {
 
 			Usuario usuario = getDao().obterUsuario(login, senha);
 			if (usuario != null) {
+				request.getSession().setAttribute("idUsuario", usuario.getIdUsuario());
 				request.getSession().setAttribute("perfil",	usuario.getTipoUsuario().name());
 				response.sendRedirect("pages/home.jsp");
 			} else {
